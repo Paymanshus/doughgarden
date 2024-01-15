@@ -55,18 +55,18 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem !important;
-    font-weight: 600;
+    font-size: 1.3rem !important;
+    font-weight: 300 !important;
 }
 
 h3 {
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: 600 !important;
 }
 
 h4 {
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 700 !important;
 }
 
 h5 {
@@ -81,6 +81,12 @@ p {
 li {
     list-style-type: none;
 }
+
+
+/* #contact>a {
+    text-decoration: none !important;
+    color: inherit !important;
+} */
 
 .site-header {
     width: 100%;
@@ -308,12 +314,14 @@ li {
     align-items: center;
     justify-content: center;
     flex-grow: 0.420;
+    z-index: 100;
 }
 
 #address {
     display: flex;
     flex-direction: inherit;
     align-items: inherit;
+    z-index: 99;
     /* flex-grow: 1; */
 }
 

@@ -27,7 +27,7 @@ $(function() {
 })
 
 const container = document.getElementById('menu');
-for (let i = 1; i <= 8; i++) {
+for (let i = 2; i <= 8; i++) {
     const img = document.createElement('img');
     img.src = 'assets/images/menu-imgs/000' + i + '.jpg';
     img.alt = 'Menu Page'
