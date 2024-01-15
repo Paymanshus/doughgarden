@@ -8,8 +8,9 @@
     --gold1: #F5DA9A;
     --gold-text: #E8D393;
     --purple-bg1: #6D3C52;
-    --bg-color2: ;
+    --purple-bg2: #480B2D;
     /* --purple1:  */
+    --navbar-height: 3.5rem;
 }
 
 * {
@@ -44,6 +45,7 @@ body {
     color: black;
     overflow-x: hidden;
     display: block;
+    color: var(--gold-text)
     /* color: #333;
     background-color: #FFFFD4; */
 }
@@ -53,21 +55,22 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     font-weight: 600;
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
 h4 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
 h5 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 p {
@@ -136,6 +139,8 @@ li {
 
 .nav-list ul li {
     display: inline;
+    margin: 0 15px;
+    font-size: 1rem;
     /* margin: 0 10rem;
     padding: 0 10rem; */
 }
@@ -151,11 +156,23 @@ li {
 } */
 
 .nav-link {
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: var(--font-semi-bold);
 }
 
 .nav-item:active {
+    color: var(--purple-bg1);
+}
+
+.nav-link:active {
+    color: var(--purple-bg1);
+}
+
+.nav-item .active a {
+    color: var(--purple-bg1);
+}
+
+.nav-link .active a {
     color: var(--purple-bg1);
 }
 
@@ -177,16 +194,16 @@ li {
     z-index: 0;
 }
 
-#landing {
+.landing {
     height: 100svh;
 }
 
 .plain-bg {
     background-color: var(--purple-bg1);
-    z-index: 0;
+    z-index: 1;
 }
 
-.hero {
+#hero {
     background-image: url("../assets/images/Group 4.png");
     background-size: cover;
 }
@@ -229,7 +246,8 @@ li {
     z-index: 10;
 }
 
-#big-text::before {
+
+/* #big-text::before {
     height: 0.18rem;
     width: 9.375rem;
     flex-shrink: 0;
@@ -237,7 +255,7 @@ li {
     background-color: var(--gold1);
     z-index: 10;
     translate: 0 -1.75rem;
-}
+} */
 
 .vr {
     height: 0.18rem;
@@ -260,7 +278,8 @@ li {
 
 #instagram-button {
     z-index: 10;
-    translate: 0 2rem;
+    flex-grow: 0.2;
+    /* translate: 0 2rem; */
 }
 
 .menu-view {
@@ -284,9 +303,68 @@ li {
 
 #contact {
     display: flex;
-    flex-direction: inherit;
+    flex-direction: column;
     /* margin: 1rem 0; */
-    align-items: inherit;
-    justify-content: inherit;
-    flex-grow: 0.25;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0.420;
 }
+
+#address {
+    display: flex;
+    flex-direction: inherit;
+    align-items: inherit;
+    /* flex-grow: 1; */
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    top: 0rem;
+}
+
+#menu img {
+    position: relative;
+    width: 98%;
+    height: auto;
+}
+
+.menu-navbar {
+    position: fixed;
+    top: 0;
+    /* background-color: var(--purple-bg2); */
+}
+
+
+/* @media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h4 {
+        font-size: 2.8em;
+    }
+    h5 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    .nav-link {
+        font-size: 1em;
+    }
+    .nav-list ul li {
+        display: inline;
+        margin: 0 15px;
+        font-size: 1rem;
+    }
+    .cta-button {
+        padding: 10px 30px;
+        font-size: 1.1rem;
+    }
+} */
